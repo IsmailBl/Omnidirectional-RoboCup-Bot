@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="Robocup_bot">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="1.6634635459466E-05 -0.00807645569814188 0.0364387900710347"
+        rpy="0 0 0" />
+      <mass
+        value="0.328713638282779" />
+      <inertia
+        ixx="0.00053488743052802"
+        ixy="-3.12537139655215E-07"
+        ixz="-2.06197405179717E-07"
+        iyy="0.000673194009915125"
+        iyz="-1.99808034510136E-05"
+        izz="0.00112532245602474" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robocup_bot/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.498039215686275 0.498039215686275 0.498039215686275 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robocup_bot/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="rfront_w">
+    <inertial>
+      <origin
+        xyz="0.0675502287519195 0.0410309438018321 0.0215008325339774"
+        rpy="0 0 0" />
+      <mass
+        value="0.0222457700612278" />
+      <inertia
+        ixx="4.13904755371248E-06"
+        ixy="1.02961453246345E-06"
+        ixz="1.09914206401848E-09"
+        iyy="3.1346854960693E-06"
+        iyz="-1.89537093641601E-09"
+        izz="2.49304480269863E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robocup_bot/meshes/rfront_w.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robocup_bot/meshes/rfront_w.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rfront_j"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="rfront_w" />
+    <axis
+      xyz="0.84804809615643 0.529919264233198 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="lfront_w">
+    <inertial>
+      <origin
+        xyz="-0.0654607321445489 0.0443748373707547 0.0214992507739321"
+        rpy="0 0 0" />
+      <mass
+        value="0.0222457700608371" />
+      <inertia
+        ixx="4.13965510471043E-06"
+        ixy="-1.02860646654922E-06"
+        ixz="9.43279882906183E-10"
+        iyy="3.13635600039315E-06"
+        iyz="1.63229260608661E-09"
+        izz="2.49076674736202E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robocup_bot/meshes/lfront_w.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robocup_bot/meshes/lfront_w.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="lfront_j"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="lfront_w" />
+    <axis
+      xyz="-0.84804809615643 0.529919264233199 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="rback_w">
+    <inertial>
+      <origin
+        xyz="0.0543303970067489 -0.0585725201764838 0.0214992507953646"
+        rpy="0 0 0" />
+      <mass
+        value="0.0222457700803192" />
+      <inertia
+        ixx="3.63797378712421E-06"
+        ixy="-1.14441405785178E-06"
+        ixz="-1.28629056127981E-09"
+        iyy="3.63803731852686E-06"
+        iyz="-1.37826432476581E-09"
+        izz="2.49076674737135E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robocup_bot/meshes/rback_w.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robocup_bot/meshes/rback_w.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rback_j"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="rback_w" />
+    <axis
+      xyz="0.707106781186547 -0.707106781186548 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="lback_w">
+    <inertial>
+      <origin
+        xyz="-0.0537849364078268 -0.0591179708802563 0.0214997502328009"
+        rpy="0 0 0" />
+      <mass
+        value="0.022245770085973" />
+      <inertia
+        ixx="3.63828161798221E-06"
+        ixy="1.14420689412198E-06"
+        ixz="1.03501459573668E-09"
+        iyy="3.63814381557207E-06"
+        iyz="-1.06636009955957E-09"
+        izz="2.49035241968276E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robocup_bot/meshes/lback_w.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robocup_bot/meshes/lback_w.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="lback_j"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="lback_w" />
+    <axis
+      xyz="-0.707106781186536 -0.707106781186559 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+
+  <transmission name="link_rf_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="rfront_j">
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="link_rf_motor">
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="link_lf_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="lfront_j">
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="link_lf_motor">
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+    <transmission name="link_rb_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="rback_j">
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="link_rb_motor">
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="link_lb_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="lback_j">
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="link_lb_motor">
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <gazebo>
+      <plugin name="control"
+    filename="libgazebo_ros_control.so">
+        <robotNamespace>/</robotNamespace>
+      </plugin>
+  </gazebo>
+
+  <gazebo reference="link_rf_trans">
+    <selfCollide>true</selfCollide>
+  </gazebo>
+
+  <gazebo reference="link_lf_trans">
+    <selfCollide>true</selfCollide>
+  </gazebo>
+
+    <gazebo reference="link_rb_trans">
+    <selfCollide>true</selfCollide>
+  </gazebo>
+
+    <gazebo reference="link_lb_trans">
+    <selfCollide>true</selfCollide>
+  </gazebo>
+  
+
+</robot>

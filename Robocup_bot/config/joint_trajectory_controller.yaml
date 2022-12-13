@@ -1,0 +1,7 @@
+robot_controller:
+  type: "position_controllers/JointTrajectoryController"
+  joints: [rfront_j,lfront_j,rback_j, lback_j]
+
+joint_state_controller:
+  type: "joint_state_controller/JointStateController"
+  publish_rate: 50
